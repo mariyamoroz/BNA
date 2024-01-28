@@ -1,0 +1,18 @@
+@import "modules/_buttons.css";
+@import "modules/_fonts.css";
+@import "modules/_colors.css";
+@import "modules/_layout.css";
+@import "modules/_typography.css";
+@import "modules/_list.css";
+@import "modules/_modal.css";
+@import "modules/_animations.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0 0 20px;
+}

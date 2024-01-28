@@ -1,0 +1,15 @@
+:root {
+    --primary-p-20: #BE8317;
+    --primary-p-30: #DB9E2F;
+    --primary-p-50: #F5CC82;
+    --primary-p-80: #FDF1DC;
+    --primary-p-90: #FFF8EC;
+    --primary-p-100: #FFFDFA;
+    --secondary-s-20: #282828;
+    --secondary-s-30: #3D3D3D;
+    --secondary-s-80: #E1DCD0;
+    --secondary-s-90: #F8F6F1;
+    --secondary-s-100: #F5F5F5;
+    --neutral-n-30: #353535;
+    --success-su-40: #0F9D58;
+}

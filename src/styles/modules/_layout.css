@@ -1,0 +1,41 @@
+.container {
+    padding-left: 27px;
+    padding-right: 27px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0;
+        width: 690px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+        width: 992px;
+    }
+}
+
+.block-container {
+    margin-top: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+    .main-content {
+        width: calc(100% / 3 * 2);
+    }
+
+    .aside-content {
+        display: flex;
+        width: calc(100% / 3);
+        margin-top: 32px;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .aside-content h2 {
+        margin-top: 0;
+    }
+}

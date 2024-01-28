@@ -1,0 +1,111 @@
+.transactions-content {
+    position: relative;
+}
+
+.transactions-filter-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.transactions-list {
+    margin-bottom: 16px;
+    max-height: 240px;
+    overflow: hidden;
+    transition: max-height .5s cubic-bezier(0, 1, 0, 1);
+}
+
+.transactions-list-is-fully-visible {
+    max-height: 1000px;
+    transition: max-height .7s ease-in-out;
+}
+
+.transactions-item {
+    height: 72px;
+    padding: 16px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    border-radius: 8px;
+    border: 1px solid var(--secondary-s-80);
+    background: #FFF;
+    margin: 8px 0;
+
+    gap: 8px;
+}
+
+.transactions-item-icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-p-80);
+}
+
+.transactions-item-is-plus .transactions-item-icon {
+    background-color: var(--primary-p-50);
+}
+
+.transactions-item-place {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.transactions-item-info {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.transactions-item-sum {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: auto;
+}
+
+.transactions-item-is-plus .transactions-item-sum {
+    color: var(--success-su-40);
+}
+
+.show-more-button {
+    margin: 0 auto;
+    width: 121px;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+    .transactions-filter-buttons {
+        margin-bottom: 8px;
+    }
+
+    .transactions-item {
+        padding: 16px;
+        gap: 24px;
+    }
+
+    .transactions-item-place,
+    .transactions-item-sum {
+        font-size: 20px;
+    }
+
+    .transactions-item-info {
+        font-size: 16px;
+    }
+
+    .transactions-item-icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .show-more-button {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

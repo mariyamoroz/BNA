@@ -1,0 +1,101 @@
+button {
+    border: 0;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    padding: 10px 24px;
+    border: 1px solid var(--primary-p-30);
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    overflow: hidden;
+    color: var(--primary-p-30);
+    transition: background-color .25s ease-in-out;
+}
+
+.button span {
+    position: relative;
+    z-index: 1;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+
+    background-color: var(--primary-p-30);
+    transition: .3s ease-out;
+}
+
+.button:hover {
+    color: var(--secondary-s-100);
+}
+
+.button:hover::before {
+    width: 100%;
+}
+
+.button-is-active {
+    color: var(--secondary-s-100);
+    background-color: var(--primary-p-30);
+}
+
+.button-grey {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    background-color: var(--neutral-n-30);
+    border: 1px solid var(--neutral-n-30);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.button-grey::before {
+    content: none;
+}
+
+.button-grey:hover {
+    box-shadow: 0 0 5px rgba(0,0,0, .5);
+}
+
+.plus-button,
+.close-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--secondary-s-30);
+}
+
+.plus-button {
+    width: 40px;
+    height: 40px;
+}
+
+.close-button {
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .button {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

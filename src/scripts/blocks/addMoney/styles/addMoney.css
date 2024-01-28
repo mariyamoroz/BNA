@@ -1,0 +1,29 @@
+.add-money-block {
+    margin-top: 72px;
+}
+
+.add-money-block .button {
+    width: 100%;
+    height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .add-money-block {
+        margin-top: 11px;
+    }
+
+    .add-money-block .button {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .add-money-block {
+        margin-top: 0;
+    }
+
+    .add-money-block .button {
+        width: 100%;
+    }
+}

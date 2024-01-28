@@ -1,0 +1,24 @@
+.card-sm {
+    display: flex;
+    height: 130px;
+    width: 200px;
+    padding: 16px;
+    gap: 8px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid var(--primary-p-50);
+    background: var(--primary-p-90);
+}
+
+.card-sm .card-img {
+    height: 50px;
+    width: 50px;
+}
+
+.card-sm .card-balance {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    margin: 0;
+}
