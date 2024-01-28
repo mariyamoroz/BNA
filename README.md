@@ -10,11 +10,11 @@ Follow these steps to install and run the application locally:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/mariyamoroz/BNA_React.git
+   git clone https://github.com/mariyamoroz/BNA.git
    
 2. **Navigate to the project directory:**
     ```bash
-   cd your-react-app-name
+   cd BNA
 
 3. **Install dependencies:**
     ```bash
